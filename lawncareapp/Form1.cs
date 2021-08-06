@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace lawncareapp
 {
-    
+
+
 
     public partial class Form1 : Form
     {
 
         int lastcut = 10;
         int nextcut = 15;
+        string nextcutDate = "Jan 8 2022";
+        int myTime = 0;
         public Form1()
         {
             InitializeComponent();
@@ -27,7 +31,15 @@ namespace lawncareapp
             lbl3.Visible = false;
             lbl4.Visible = false;
             lbl_lastcut.Visible = false;
+
+
         }
+
+
+            
+
+        
+
 
 
 
@@ -39,9 +51,15 @@ namespace lawncareapp
             rtxbx1.Visible = true;
             lbl_lastcut.Visible = true;
 
+            lbl_lastcut_date.Text = DateTime.Now.ToString("d/MM/yyyy");
+            DateTime today = DateTime.Now;
+            DateTime nextcutDate = today.AddDays(15);
+
+            //lbl_myTime.Text = ("Time  " + myTime); Figure this out later
 
 
-            lbl_lastcut.Text = "Great the next cut it will be in " + nextcut + " days";
+
+            lbl_lastcut.Text = "Great the next cut it will be in " + nextcut + " days. Thats " + nextcutDate.ToString("MM/d");
         }
 
         private void btn_no_Click(object sender, EventArgs e)
@@ -129,5 +147,7 @@ namespace lawncareapp
         {
 
         }
+        
     }
+    
 }

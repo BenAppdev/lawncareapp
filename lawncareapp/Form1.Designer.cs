@@ -48,6 +48,8 @@ namespace lawncareapp
             this.btn_reset = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_lastcut = new System.Windows.Forms.Label();
+            this.lbl_myTime = new System.Windows.Forms.Label();
+            this.lbl_lastcut_date = new System.Windows.Forms.Label();
             this.gbx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -242,11 +244,32 @@ namespace lawncareapp
             this.lbl_lastcut.TabIndex = 15;
             this.lbl_lastcut.Text = "label1";
             // 
+            // lbl_myTime
+            // 
+            this.lbl_myTime.AutoSize = true;
+            this.lbl_myTime.Location = new System.Drawing.Point(516, 63);
+            this.lbl_myTime.Name = "lbl_myTime";
+            this.lbl_myTime.Size = new System.Drawing.Size(35, 13);
+            this.lbl_myTime.TabIndex = 16;
+            this.lbl_myTime.Text = "label1";
+            this.lbl_myTime.Visible = false;
+            // 
+            // lbl_lastcut_date
+            // 
+            this.lbl_lastcut_date.AutoSize = true;
+            this.lbl_lastcut_date.Location = new System.Drawing.Point(529, 395);
+            this.lbl_lastcut_date.Name = "lbl_lastcut_date";
+            this.lbl_lastcut_date.Size = new System.Drawing.Size(72, 13);
+            this.lbl_lastcut_date.TabIndex = 17;
+            this.lbl_lastcut_date.Text = "Last Cut Date";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 665);
+            this.ClientSize = new System.Drawing.Size(865, 665);
+            this.Controls.Add(this.lbl_lastcut_date);
+            this.Controls.Add(this.lbl_myTime);
             this.Controls.Add(this.lbl_lastcut);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_reset);
@@ -293,6 +316,8 @@ namespace lawncareapp
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_lastcut;
+        private System.Windows.Forms.Label lbl_myTime;
+        private System.Windows.Forms.Label lbl_lastcut_date;
     }
 }
 
