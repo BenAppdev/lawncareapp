@@ -42,9 +42,9 @@ namespace lawncareapp
             this.btn_yes_3 = new System.Windows.Forms.Button();
             this.lbl4 = new System.Windows.Forms.Label();
             this.gbx1 = new System.Windows.Forms.GroupBox();
-            this.rtxbx1 = new System.Windows.Forms.RichTextBox();
-            this.rtxbx2 = new System.Windows.Forms.RichTextBox();
             this.rtxbx3 = new System.Windows.Forms.RichTextBox();
+            this.rtxbx2 = new System.Windows.Forms.RichTextBox();
+            this.rtxbx1 = new System.Windows.Forms.RichTextBox();
             this.btn_reset = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbx1.SuspendLayout();
@@ -178,16 +178,15 @@ namespace lawncareapp
             this.gbx1.TabStop = false;
             this.gbx1.Text = "Recommendations";
             // 
-            // rtxbx1
+            // rtxbx3
             // 
-            this.rtxbx1.Location = new System.Drawing.Point(6, 19);
-            this.rtxbx1.Name = "rtxbx1";
-            this.rtxbx1.Size = new System.Drawing.Size(417, 51);
-            this.rtxbx1.TabIndex = 1;
-            this.rtxbx1.Text = "Experts say: Cutting your grass Once a week allows for grasses to grow more beaut" +
-    "iful";
-            this.rtxbx1.Visible = false;
-            this.rtxbx1.TextChanged += new System.EventHandler(this.rtxbx1_TextChanged);
+            this.rtxbx3.Location = new System.Drawing.Point(6, 133);
+            this.rtxbx3.Name = "rtxbx3";
+            this.rtxbx3.Size = new System.Drawing.Size(417, 51);
+            this.rtxbx3.TabIndex = 3;
+            this.rtxbx3.Text = "Experts say: add weed terminator allows the grass to grow without having to share" +
+    " space with a weed. This means it will grow faster and easier all year long";
+            this.rtxbx3.Visible = false;
             // 
             // rtxbx2
             // 
@@ -200,15 +199,16 @@ namespace lawncareapp
             this.rtxbx2.Visible = false;
             this.rtxbx2.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // rtxbx3
+            // rtxbx1
             // 
-            this.rtxbx3.Location = new System.Drawing.Point(6, 133);
-            this.rtxbx3.Name = "rtxbx3";
-            this.rtxbx3.Size = new System.Drawing.Size(417, 51);
-            this.rtxbx3.TabIndex = 3;
-            this.rtxbx3.Text = "Experts say: add weed terminator allows the grass to grow without having to share" +
-    " space with a weed. This means it will grow faster and easier all year long";
-            this.rtxbx3.Visible = false;
+            this.rtxbx1.Location = new System.Drawing.Point(6, 19);
+            this.rtxbx1.Name = "rtxbx1";
+            this.rtxbx1.Size = new System.Drawing.Size(417, 51);
+            this.rtxbx1.TabIndex = 1;
+            this.rtxbx1.Text = "Experts say: Mowing your Lawn Once a week allows for grasses to grow more beautif" +
+    "ul";
+            this.rtxbx1.Visible = false;
+            this.rtxbx1.TextChanged += new System.EventHandler(this.rtxbx1_TextChanged);
             // 
             // btn_reset
             // 
