@@ -10,14 +10,23 @@ using System.Windows.Forms;
 
 namespace lawncareapp
 {
+    
+
     public partial class Form1 : Form
     {
+
+        int lastcut = 10;
+        int nextcut = 15;
         public Form1()
         {
             InitializeComponent();
+
+            
+
             lbl2.Visible = false;
             lbl3.Visible = false;
             lbl4.Visible = false;
+            lbl_lastcut.Visible = false;
         }
 
 
@@ -28,14 +37,23 @@ namespace lawncareapp
             lbl2.Text = "Great Job see you next month";
             lbl2.ForeColor = Color.Black;
             rtxbx1.Visible = true;
+            lbl_lastcut.Visible = true;
+
+
+
+            lbl_lastcut.Text = "Great the next cut it will be in " + nextcut + " days";
         }
 
         private void btn_no_Click(object sender, EventArgs e)
         {
+            //int lastcut = 10;  this has been declared on the global level
             lbl2.Visible = true;
             lbl2.Text = "All right now its time to get on it";
             lbl2.ForeColor = Color.Red;
             rtxbx1.Visible = true;
+            lbl_lastcut.Visible = true;
+
+            lbl_lastcut.Text = "The last time you cut it was "+ lastcut + " days ago";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -98,6 +116,16 @@ namespace lawncareapp
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_lastcut_Click(object sender, EventArgs e)
         {
 
         }

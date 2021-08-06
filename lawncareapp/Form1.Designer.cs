@@ -47,6 +47,7 @@ namespace lawncareapp
             this.rtxbx1 = new System.Windows.Forms.RichTextBox();
             this.btn_reset = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_lastcut = new System.Windows.Forms.Label();
             this.gbx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,7 +84,7 @@ namespace lawncareapp
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(81, 173);
+            this.lbl2.Location = new System.Drawing.Point(529, 163);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(23, 13);
             this.lbl2.TabIndex = 3;
@@ -122,7 +123,7 @@ namespace lawncareapp
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(81, 244);
+            this.lbl3.Location = new System.Drawing.Point(529, 232);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(23, 13);
             this.lbl3.TabIndex = 7;
@@ -160,7 +161,7 @@ namespace lawncareapp
             // lbl4
             // 
             this.lbl4.AutoSize = true;
-            this.lbl4.Location = new System.Drawing.Point(81, 324);
+            this.lbl4.Location = new System.Drawing.Point(529, 308);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(23, 13);
             this.lbl4.TabIndex = 11;
@@ -232,11 +233,21 @@ namespace lawncareapp
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // lbl_lastcut
+            // 
+            this.lbl_lastcut.AutoSize = true;
+            this.lbl_lastcut.Location = new System.Drawing.Point(529, 140);
+            this.lbl_lastcut.Name = "lbl_lastcut";
+            this.lbl_lastcut.Size = new System.Drawing.Size(35, 13);
+            this.lbl_lastcut.TabIndex = 15;
+            this.lbl_lastcut.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 665);
+            this.ClientSize = new System.Drawing.Size(824, 665);
+            this.Controls.Add(this.lbl_lastcut);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.gbx1);
@@ -281,6 +292,7 @@ namespace lawncareapp
         private System.Windows.Forms.RichTextBox rtxbx2;
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_lastcut;
     }
 }
 
