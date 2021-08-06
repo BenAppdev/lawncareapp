@@ -194,7 +194,7 @@ namespace lawncareapp
             this.rtxbx2.Name = "rtxbx2";
             this.rtxbx2.Size = new System.Drawing.Size(417, 51);
             this.rtxbx2.TabIndex = 2;
-            this.rtxbx2.Text = "Experts say: Watering your grass regulalry gives the growing grasses more nutrien" +
+            this.rtxbx2.Text = "Experts Say: Watering your grass regulalry gives the growing grasses more nutrien" +
     "t water that helps the grass grow well";
             this.rtxbx2.Visible = false;
             this.rtxbx2.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
