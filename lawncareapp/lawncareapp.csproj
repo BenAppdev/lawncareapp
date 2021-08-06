@@ -83,5 +83,8 @@
   <ItemGroup>
     <None Include="grp_title.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grp_mowermain.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

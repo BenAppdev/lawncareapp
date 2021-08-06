@@ -20,7 +20,11 @@ namespace lawncareapp
         int lastcut = 10;
         int nextcut = 15;
         string nextcutDate = "Jan 8 2022";
+        int nextMaintenance = 150;
+        
         int myTime = 0;
+
+        string mycutterlink = ("http://www.homedepot.com");
         public Form1()
         {
             InitializeComponent();
@@ -34,12 +38,6 @@ namespace lawncareapp
 
 
         }
-
-
-            
-
-        
-
 
 
 
@@ -147,7 +145,75 @@ namespace lawncareapp
         {
 
         }
-        
+
+        private void lbl_lastcut_date_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_no_mowerOil_Click(object sender, EventArgs e)
+        {
+            //lbl_oil_hyperlink.Text = ("www.homedepot.com");
+            //lbl_oil_.Text = DateTime.Now.ToString("d/MM/yyyy");
+        }
+
+        private void lbl_oil_hyperlink_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_orderBlade_Click(object sender, EventArgs e)
+        {
+            
+            System.Diagnostics.Process.Start("https://www.homedepot.com/p/Toro-22-in-Atomic-Replacement-Blade-for-Select-Brand-Lawn-Mowers-59534P/100190186?source=shoppingads&locale=en-US&mtc=Shopping-B-F_D28I-G-D28I-028_037_OUTDR_PW_ACC-NA-NA-NA-SMART-NA-NA-SMART_SHP&cm_mmc=Shopping-B-F_D28I-G-D28I-028_037_OUTDR_PW_ACC-NA-NA-NA-SMART-NA-NA-SMART_SHP-71700000079956011-58700006728091443-92700060957828806&gclid=Cj0KCQjwu7OIBhCsARIsALxCUaMhF2jBsPw13dMpGw19Fs1-EkDdBP2poKcbtOeHVXib6ANabg0V5C8aAlPFEALw_wcB&gclsrc=aw.ds");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.homedepot.com/p/Toro-8-oz-Top-it-Off-SAE-30-4-Cycle-Premium-Lawn-Mower-Engine-Oil-139-0628/307270389");
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_nextschedmain_Click(object sender, EventArgs e)
+        {
+;
+
+
+        }
+
+        private void dateTimePicker_mowermain_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime nextmain;    
+            dateTimePicker_mowermain.Text = DateTime.Now.ToString("d/MM/yyyy");
+            DateTime todaymain = dateTimePicker_mowermain.Value ;
+            //lbl_nextschedmain.Text = (dateTimePicker_mowermain.Value.ToString("d/MM"));
+            nextmain = todaymain.AddDays(5);
+            lbl_nextschedmain.Text = ("Your next Scheduled Maintenance is "+nextmain.ToString("MM/d"));
+
+            //lbl_lastcut_date.Text = DateTime.Now.ToString("d/MM/yyyy");
+            //DateTime today = DateTime.Now;
+            //DateTime nextcutDate = today.AddDays(15);
+            //today.AddDays(15);
+        }
     }
     
 }
